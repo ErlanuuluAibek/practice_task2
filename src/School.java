@@ -11,20 +11,20 @@ public class School implements Service{
 
     }
     @Override
-    public String findByName(String studentName){
+    public Student findByName(String studentName){
         for (int i = 0; i < students.length; i++) {
             if(studentName.equals(students[i].getName())) {
-                return studentName;
+                return students[i];
             }
         }
-        return "net takogo imeni";
+       return null;
 
     }
 
     @Override
     public void getAllStudents() {
         for (int i = 0; i < students.length; i++) {
-            System.out.println(students[i].getName());
+            System.out.println(students[i]);
         }
     }
 

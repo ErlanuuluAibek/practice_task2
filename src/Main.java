@@ -14,7 +14,7 @@ public class Main {
         Student student10=new Student("\nSultan","Murzagulov",18, "Sultan@gmail.com","male",7);
         Student[]students=new Student[]{student,student2,student3,student4,student10,student6,student5,student7,student8,student9};
         School school=new School("M. Sudukov",students);
-        System.out.println(school.findByName(""));
+        System.out.println(school.findByName("Aibek"));
         System.out.println(Arrays.toString(school.getAllGirls()));
         System.out.println(school);
         System.out.println(school.getAverageEstimation());
