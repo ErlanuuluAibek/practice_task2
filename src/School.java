@@ -55,8 +55,8 @@ public class School implements Service{
 
     @Override
     public double getAverageEstimation() {
-        int san=0;
-        int arif=0;
+        double san=0;
+        double arif;
         for (int i = 0; i < students.length; i++) {
             san+=students[i].getEstimation();
         }
